@@ -105,7 +105,7 @@ const BlogSinglePage = () => {
           onChange={(e) => setNewComment({ ...newComment, comment: e.target.value })}
           sx={{ mb: 2 }}
         />
-        <Button variant="contained" onClick={handleSubmit}>
+        <Button variant="contained" sx={{background:'#455a64'}} onClick={handleSubmit}>
           Submit
         </Button>
       </Box>

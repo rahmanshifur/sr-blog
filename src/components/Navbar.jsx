@@ -46,7 +46,7 @@ function Navbar() {
   const isMobile = useMediaQuery(theme.breakpoints.down("sm"));
 
   return (
-    <AppBar position="static">
+    <AppBar position="static" sx={{background:'#455a64'}}>
       <Container maxWidth="xl">
         <Toolbar sx={{ display: "flex", justifyContent: "space-between" }}>
           <Typography
@@ -61,9 +61,8 @@ function Navbar() {
               textDecoration: "none",
             }}
           >
-            SrBlog
+            <span style={{ color: '#FF6D05' }}>Sr</span>Blog
           </Typography>
-
           <Box>
             {isAuth ? (
               <>
@@ -93,8 +92,8 @@ function Navbar() {
                 component={Link}
                 to="/login"
                 variant="contained"
-                color="secondary"
-                sx={{ textTransform: "none" }}
+                color="transparent"
+                sx={{ textTransform: "none",border:'1px solid #eeeeee',fontWeight:'bold' }}
               >
                 Log In
               </Button>

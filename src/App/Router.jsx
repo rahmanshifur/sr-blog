@@ -4,7 +4,6 @@ import Home from "../pages/Home";
 import PageNotFound from "../pages/404";
 import Profile from "../pages/Profile";
 import Login from "../pages/Login";
-import Register from "../pages/Register";
 import UserLayout from "../layouts/UserLayout";
 import AdminLayout from "../layouts/AdminLayout";
 import Dashboard from "../pages/admin/Dashboard";
@@ -12,6 +11,7 @@ import AddPost from "../pages/admin/AddPost";
 import AllPost from "../pages/admin/AllPost";
 import Users from "../pages/admin/Users";
 import BlogSinglePage from "../pages/SinglePost";
+import Signup from "../pages/Signup";
 
 const AppRouter = () => {
   return (
@@ -32,7 +32,7 @@ const AppRouter = () => {
           </Route>
 
           <Route path="/login" element={<Login />} />
-          <Route path="/register" element={<Register />} />
+          <Route path="/sign-up" element={<Signup />} />
           <Route path="*" element={<PageNotFound />} />
         </Routes>
       </BrowserRouter>
